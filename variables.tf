@@ -29,3 +29,14 @@ variable "public_subnets" {
   }
 }
 
+variable "environment" {
+  type        = string
+  description = "(optional)Environment of all resources"
+  default     = "development"
+}
+
+variable "billing_code" {
+  type        = string
+  description = "(Required) Billing code for network resources"
+}
+
